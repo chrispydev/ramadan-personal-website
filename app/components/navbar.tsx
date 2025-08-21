@@ -1,7 +1,7 @@
 import Logo from './logo';
 import NavLink from './nav-link';
 
-const header = () => {
+const navbar = () => {
   return (
     <header className="flex justify-center items-center space-x-4 shadow-md p-4">
       <Logo />
@@ -24,5 +24,5 @@ const header = () => {
   )
 }
 
-export default header
+export default navbar
 

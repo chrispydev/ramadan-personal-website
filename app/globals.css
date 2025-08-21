@@ -9,7 +9,25 @@
 @theme {
   --color-primary: #268038;
   --color-secondary: #ed1c24;
+  --image-slider-1: url('../public/slider-image/slider-image-1.jpg');
+  --image-slider-2: url('../public/slider-image/slider-image-2.jpg');
+  --image-slider-3: url('../public/slider-image/slider-image-3.jpg');
 }
+
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* darkness level */
+  background-blend-mode: multiply;
+  /* blends black with image */
+}
+
+.slider-bg-1 {
+  background-image: var(--image-slider-1);
+}
+
 
 body {
   background: var(--background);
