@@ -123,7 +123,7 @@ npm run dev
 - Version Control: Git & GitHub
 
 ## 📸 Screenshots
-![alt text](./Screenshot.png)
+![alt text](Screenshot.png)
 
 
 ## 🌐 Deployment
