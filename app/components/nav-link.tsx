@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import { NextPage } from 'next';
 
 interface NavLinkProps {
   href: string;
   linkName: string;
 }
 
-const NavLink = ({ href, linkName }: NavLinkProps) => {
+const NavLink: NextPage<NavLinkProps> = ({ href, linkName }) => {
 
   return (
     <div>
