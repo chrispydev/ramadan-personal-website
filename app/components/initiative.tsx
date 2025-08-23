@@ -16,7 +16,7 @@ const Initiative = () => {
           <h2 className="font-black text-2xl">
             Advancing the Common Good with an Uncommon Will
           </h2>
-          <HorizontalLine />
+          <HorizontalLine height={7} />
           <p className="leading-6 mt-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
