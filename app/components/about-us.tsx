@@ -3,7 +3,7 @@ import HorizontalLine from "./horizontal-line"
 
 const AboutUs = () => {
   return (
-    <section className="flex justify-center items-start gap-10">
+    <section className="flex justify-center items-start gap-10 mb-4">
       <div>
         <Image className="w-full h-[560px] object-contain" src="/about-us.jpg" alt="About Us" width={500} height={400} />
       </div>
