@@ -1,7 +1,7 @@
 import AboutUs from "./components/about-us";
 import Header from "./components/header";
 import Initiative from "./components/initiative";
-import InitiativeGallery from "./components/initiative-gallery";
+import InitiativeGrid from "./components/initiative-grid";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <AboutUs />
       <Initiative />
-      <InitiativeGallery />
+      <InitiativeGrid />
     </main>
 
   );

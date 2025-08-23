@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { NextPage } from 'next';
+import { FC } from 'react'
 
 interface NavLinkProps {
   href: string;
   linkName: string;
 }
 
-const NavLink: NextPage<NavLinkProps> = ({ href, linkName }) => {
+const NavLink: FC<NavLinkProps> = ({ href, linkName }) => {
 
   return (
     <div>

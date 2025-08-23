@@ -1,17 +1,17 @@
-import { NextPage } from "next"
+import { FC } from "react";
 
 interface HorizontalLineProps {
-  height?: number
+  height?: number; // optional
 }
 
-const HorizontalLine: NextPage<HorizontalLineProps> = () => {
+const HorizontalLine: FC<HorizontalLineProps> = ({ height = 3 }) => {
   return (
     <div className="flex items-center justify-center">
-      <span className="h-1 w-15 bg-primary" />
-      <span className="h-1 w-8 bg-secondary" />
+      <span className={`w-[60px] bg-primary`} style={{ height: `${height}px` }} />
+      <span className={`w-[32px] bg-secondary`} style={{ height: `${height}px` }} />
     </div>
+  );
+};
 
-  )
-}
+export default HorizontalLine;
 
-export default HorizontalLine
