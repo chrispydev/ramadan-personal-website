@@ -13,6 +13,7 @@
   --image-slider-2: url('../public/slider-image/slider-image-2.jpg');
   --image-slider-3: url('../public/slider-image/slider-image-3.jpg');
   --parallax-image: url('../public/parallax-image.jpg');
+  --event-image: url('../public/events.jpg');
 }
 
 
@@ -59,6 +60,13 @@
   background: rgba(0, 0, 0, 0.9);
   /* dark transparent overlay */
   z-index: 0;
+}
+
+.event-image {
+  background-image: var(--event-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
