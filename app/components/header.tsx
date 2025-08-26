@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const header = () => {
   return (
-    <div className="w-full mx-auto h-[500px]">
+    <div className="w-full mx-auto h-[400px]">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}
