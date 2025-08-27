@@ -2,7 +2,7 @@
 const Events = () => {
   return (
     <section className="my-14 px-10 w-[full] h-[250px] grid grid-cols-1 md:grid-cols-2">
-      <div className="event-image w-full h-[250px]"></div>
+      <div className="event-image w-full h-full"></div>
       <div className="bg-secondary text-white p-5 space-y-3">
         <h3 className="text-2xl uppercase">Events</h3>
         <h2 className="font-bold text-3xl">Mohammed Adamu Ramadan</h2>
