@@ -10,14 +10,14 @@ const playwrite = Playwrite_CA({
 
 const Initiative = () => {
   return (
-    <section className="parallax text-white px-10 py-10">
-      <article className="grid grid-cols-2 gap-2 place-items-center relative z-10">
+    <section className="parallax text-white md:px-10 px-5 md:py-10 py-4">
+      <article className="grid grid-cols-1 md:grid-cols-2 gap-2 place-items-center relative z-10">
         <div className="flex flex-col justify-center items-start">
-          <h2 className="font-black text-2xl">
+          <h2 className="font-black text-xl md:text-2xl">
             Advancing the Common Good with an Uncommon Will
           </h2>
-          <HorizontalLine height={7} />
-          <p className="leading-6 mt-6">
+          <HorizontalLine height={5} />
+          <p className="leading-6 mt-6 text-sm md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
             suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
@@ -28,7 +28,7 @@ const Initiative = () => {
             Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem
             ut libero malesuada feugia
           </p>
-          <h5 className={`font-light text-sm underline mt-6 decoration-primary italic ${playwrite.className} `}>- John Doe, CEO</h5>
+          <h5 className={`font-light text-sm underline md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${playwrite.className} `}>- John Doe, CEO</h5>
         </div>
         <div>
           <Image
