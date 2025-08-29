@@ -1,9 +1,12 @@
+import Image from "next/image"
 
 const Events = () => {
   return (
-    <section className="">
-      <div className=" px-10 w-[full] h-[250px] grid grid-cols-1 md:grid-cols-2">
-        <div className="event-image w-full h-full"></div>
+    <section className="my-4">
+      <div className="px-10 w-[full] h-full grid grid-cols-1 md:grid-cols-2">
+        <div className="">
+          <Image className="w-full lg:h-[253px] md:h-[348px] h-[200px] object-fill object-center" src={'/events.jpg'} alt="event" width={100} height={250} />
+        </div>
         <div className="bg-secondary text-white p-5 space-y-3">
           <h3 className="text-2xl uppercase">Events</h3>
           <h2 className="font-bold text-3xl">Mohammed Adamu Ramadan</h2>

@@ -8,7 +8,7 @@ import Volunteer from "./components/volunteer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Header />
       <AboutUs />
       <Initiative />

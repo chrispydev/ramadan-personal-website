@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <section className="mt-10 ">
-      <article className="grid grid-cols-4 gap-8 px-8">
+      <article className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 px-8">
         <div className="space-y-8">
           <h5 className="font-black uppercase">Socal Media</h5>
           <ul className="text-sm space-y-4">
