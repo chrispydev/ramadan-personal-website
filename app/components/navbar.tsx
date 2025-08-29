@@ -8,11 +8,11 @@ const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="flex lg:justify-center justify-between items-center space-x-4 shadow-md p-4  relative ">
+    <header className="flex lg:justify-center justify-between items-center space-x-4 shadow-md p-4  sticky top-0 left-0 right-0 bg-white z-50">
       <Logo />
       <ul className="hidden lg:flex justify-center items-center space-x-4">
         <li>
-          <NavLink href="/" linkName="Meet Ramadan" />
+          <NavLink href="/meet-ramadan" linkName="Meet Ramadan" />
         </li>
         <li>
           <NavLink href="/" linkName="Initiative" />
