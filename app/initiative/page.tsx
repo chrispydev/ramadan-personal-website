@@ -9,7 +9,14 @@ export default function Initiative() {
         <h1 className="font-black text-4xl capitalize">Mohammed Adamu - Ramadan <br /> On the Issues.</h1>
         <HorizontalLine height={7} />
       </div>
-      <article className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 md:gap-6 lg:gap-2 my-8">
+      <article className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 md:gap-6 lg:gap-2 my-8">
+        <Initiate />
+        <Initiate />
+        <Initiate />
+        <Initiate />
+        <Initiate />
+        <Initiate />
+        <Initiate />
         <Initiate />
       </article>
 
