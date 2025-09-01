@@ -15,7 +15,7 @@ const Navbar: FC = () => {
           <NavLink href="/meet-ramadan" linkName="Meet Ramadan" />
         </li>
         <li>
-          <NavLink href="/" linkName="Initiative" />
+          <NavLink href="/initiative" linkName="Initiative" />
         </li>
         <li>
           <NavLink href="/" linkName="Events" />

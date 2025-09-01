@@ -70,6 +70,9 @@
   background-position: center center;
 }
 
+.font-width {
+  font-weight: 100;
+}
 
 body {
   background: var(--background);

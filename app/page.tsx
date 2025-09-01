@@ -1,7 +1,7 @@
 import AboutUs from "./components/about-us";
 import Events from "./components/events";
 import Header from "./components/header";
-import Initiative from "./components/initiative";
+import InitiativeSection from "./components/initiative-section";
 import InitiativeGrid from "./components/initiative-grid";
 import Volunteer from "./components/volunteer";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <main className="relative">
       <Header />
       <AboutUs />
-      <Initiative />
+      <InitiativeSection />
       <InitiativeGrid />
       <Volunteer />
       <Events />
