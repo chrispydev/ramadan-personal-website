@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/seer/ramadan-website/app/components/header.tsx"],"sourcesContent":["import Swiper from 'swiper';\nimport 'swiper/css';\nimport 'swiper/css';\nimport 'swiper/css/navigation';\nimport 'swiper/css/pagination';\n\nconst header = () => {\n  return (\n    <div>\n      <h1>This is a header</h1>\n    </div>\n  )\n}\n\nexport default header\n"],"names":[],"mappings":";;;;;;;;;;AAMA,MAAM,SAAS;IACb,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGV;uCAEe","debugId":null}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///home/seer/ramadan-website/app/page.tsx"],"sourcesContent":["import Header from \"./components/header\";\n\nexport default function Home() {\n  return (\n    <main>\n      <Header />\n    </main>\n\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC,uIAAM;;;;;;;;;;AAIb","debugId":null}}]
+}

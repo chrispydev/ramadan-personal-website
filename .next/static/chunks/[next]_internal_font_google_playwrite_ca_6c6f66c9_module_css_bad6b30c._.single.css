@@ -1,0 +1,52 @@
+/* [next]/internal/font/google/playwrite_ca_6c6f66c9.module.css [app-client] (css) */
+@font-face {
+  font-family: Playwrite CA;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../media/29558d1e1a5c3046-s.64bd5937.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Playwrite CA;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../media/29558d1e1a5c3046-s.64bd5937.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Playwrite CA;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/29558d1e1a5c3046-s.64bd5937.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Playwrite CA;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/29558d1e1a5c3046-s.64bd5937.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Playwrite CA Fallback;
+  src: local(Arial);
+  ascent-override: 120.37%;
+  descent-override: 42.3%;
+  line-gap-override: 0.0%;
+  size-adjust: 118.21%;
+}
+
+.playwrite_ca_6c6f66c9-module__xeYa_G__className {
+  font-family: Playwrite CA, Playwrite CA Fallback;
+  font-style: normal;
+}
+
+.playwrite_ca_6c6f66c9-module__xeYa_G__variable {
+  --font-playwrite-canyon: "Playwrite CA", "Playwrite CA Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_playwrite_ca_6c6f66c9_module_css_bad6b30c._.single.css.map*/
