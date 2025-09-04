@@ -2537,7 +2537,9 @@ function getImageProps(imgProps) {
             "loader": ("TURBOPACK compile-time value", "default"),
             "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
             "unoptimized": ("TURBOPACK compile-time value", false),
-            "domains": ("TURBOPACK compile-time value", []),
+            "domains": ("TURBOPACK compile-time value", [
+                ("TURBOPACK compile-time value", "cdn.sanity.io")
+            ]),
             "remotePatterns": ("TURBOPACK compile-time value", [])
         })
     });
