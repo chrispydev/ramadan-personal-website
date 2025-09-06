@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export const eventType = defineType({
-  name: 'events',
-  title: 'Events',
+  name: 'event',
+  title: 'Event',
   type: 'document',
   initialValue: () => ({
     publishedAt: new Date().toISOString(),
