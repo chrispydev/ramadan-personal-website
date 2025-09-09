@@ -4,6 +4,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { client } from "@/sanity/client";
 import Link from "next/link";
+import { FaCalendarAlt } from "react-icons/fa"
+import Image from "next/image";
 
 const EVENT_QUERY = `*[_type == "event" && slug.current == $slug][0]`;
 
@@ -70,22 +72,29 @@ export default async function EventPage({
         ← Back to posts
       </Link>
 
+      <div className="mb-4">
+        <h1 className="text-2xl font-medium mb-4 uppercase leading-7">{event.title}</h1>
+        <div className="h-2 w-25 bg-secondary" />
+      </div>
+
+      {event.publishedAt && (
+        <div className="flex items-center gap-2 ">
+          <FaCalendarAlt className="text-white p-1 bg-secondary text-2xl" />
+          <p className="text-gray-500 text-sm">Event Date on {formatDate(event.publishedAt)}</p>
+        </div>
+      )}
       {postImageUrl && (
-        <img
+        <Image
           src={postImageUrl}
           alt={event.title}
-          className="aspect-video rounded-xl"
-          width="550"
-          height="310"
+          className="w-full object-contain"
+          width={550}
+          height={310}
         />
       )}
 
-      <h1 className="text-4xl font-bold mb-8">{event.title}</h1>
 
-      <div className="prose">
-        {event.publishedAt && (
-          <p>Published: {formatDate(event.publishedAt)}</p>
-        )}
+      <div className="prose space-y-4 text-sm">
         {Array.isArray(event.body) && <PortableText value={event.body} />}
       </div>
     </main>

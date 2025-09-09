@@ -21,7 +21,7 @@ const Navbar: FC = () => {
           <NavLink href="/events" linkName="Events" />
         </li>
         <li>
-          <NavLink href="/" linkName="News" />
+          <NavLink href="/news" linkName="News" />
         </li>
         <NavLink href="/" linkName="Contact Us" />
       </ul>

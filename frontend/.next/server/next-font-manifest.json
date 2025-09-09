@@ -4,15 +4,11 @@
       "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
+    "[project]/frontend/app/events/[slug]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
+      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
+    ],
     "[project]/frontend/app/events/page": [
-      "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
-    ],
-    "[project]/frontend/app/initiative/[slug]/page": [
-      "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
-      "static/media/797e433ab948586e-s.p.dbea232f.woff2"
-    ],
-    "[project]/frontend/app/initiative/page": [
       "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
       "static/media/797e433ab948586e-s.p.dbea232f.woff2"
     ],
