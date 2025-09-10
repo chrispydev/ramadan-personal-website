@@ -1,7 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/events/[slug]/page": "app/events/[slug]/page.js",
-  "/events/page": "app/events/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/initiative/[slug]/page": "app/initiative/[slug]/page.js",
+  "/initiative/page": "app/initiative/page.js",
   "/page": "app/page.js"
 }

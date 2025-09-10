@@ -3,6 +3,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { client } from "@/sanity/client";
 import Link from "next/link";
+import Image from "next/image";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const INITIATIVE_QUERY = `*[_type == "initiative" && slug.current == $slug][0]`;
 
@@ -69,22 +71,29 @@ export default async function PostPage({
         ← Back to posts
       </Link>
 
+      <div className="mb-4">
+        <h1 className="text-2xl font-medium mb-4 uppercase leading-7">{initiative.title}</h1>
+        <div className="h-2 w-25 bg-secondary" />
+      </div>
+
+      {initiative.publishedAt && (
+        <div className="flex items-center gap-2 ">
+          <FaCalendarAlt className="text-white p-1 bg-secondary text-2xl" />
+          <p className="text-gray-500 text-sm">Event Date on {formatDate(initiative.publishedAt)}</p>
+        </div>
+      )}
       {postImageUrl && (
-        <img
+        <Image
           src={postImageUrl}
           alt={initiative.title}
-          className="aspect-video rounded-xl"
-          width="550"
-          height="310"
+          className="w-full object-contain"
+          width={550}
+          height={310}
         />
       )}
 
-      <h1 className="text-4xl font-bold mb-8">{initiative.title}</h1>
 
-      <div className="prose">
-        {initiative.publishedAt && (
-          <p>Published: {formatDate(initiative.publishedAt)}</p>
-        )}
+      <div className="prose space-y-4 text-sm">
         {Array.isArray(initiative.body) && <PortableText value={initiative.body} />}
       </div>
     </main>
