@@ -403,18 +403,21 @@ const Initiative = ()=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "leading-6 mt-6 text-sm md:text-base",
-                            children: "Mohammend Adamu Ramadan is dedicated to making a positive impact in the lives of individuals and communities. Through his initiatives, he strives to create opportunities, promote education, and foster sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change."
+                            children: "Mohammend Adamu Ramadan embodies a rare and admirable trait possessed by only a few individuals worldwide. Through his initiatives, selfless commitment and decisive leadership, he has created numerous projects and initiatives that has brought lasting development and meaningful tranformation to the Adentan Constituency. He's also creating opportunities, promoting education, and fostering sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change to Adentan Constituency and Ghana as a whole."
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/components/initiative-section.tsx",
                             lineNumber: 20,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                            className: `font-light text-sm capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$playwrite_ca_44f6d92f$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} `,
+                            className: `font-bold text-xl  capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary   `,
+                            style: {
+                                fontFamily: "TuesdayNight, sans-serif"
+                            },
                             children: "- Ramadan Adamu Mohammend"
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                            lineNumber: 23,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -431,12 +434,12 @@ const Initiative = ()=>{
                         height: 530
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]

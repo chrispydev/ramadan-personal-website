@@ -5,11 +5,10 @@ const Footer = () => {
         <div className="space-y-8">
           <h5 className="font-black uppercase">Socal Media</h5>
           <ul className="text-sm space-y-4">
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
-            <li>WhatsApp</li>
+            <li><a href="" target="_blank">Facebook</a></li>
+            <li><a href="https://x.com/adamuramadan?s=21" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/mohammedadamuramadan?igsh=MW82NGF5eXd3NGZ2cA==" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/+233245812888" target="_blank">WhatsApp</a></li>
           </ul>
         </div>
         <div className="space-y-8">
@@ -29,7 +28,7 @@ const Footer = () => {
             <li>Our Projects</li>
             <li>Privary Policy</li>
             <li>Terms and Conditions</li>
-            <li>Contat Us</li>
+            <li>Contact Us</li>
           </ul>
         </div>
         <div className="space-y-8">

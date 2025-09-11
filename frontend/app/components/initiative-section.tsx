@@ -18,9 +18,10 @@ const Initiative = () => {
           </h2>
           <HorizontalLine height={5} />
           <p className="leading-6 mt-6 text-sm md:text-base">
-            Mohammend Adamu Ramadan is dedicated to making a positive impact in the lives of individuals and communities. Through his initiatives, he strives to create opportunities, promote education, and foster sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change.
+            Mohammend Adamu Ramadan embodies a rare and admirable trait possessed by only a few individuals worldwide. Through his initiatives, selfless commitment and decisive leadership, he has created numerous projects and initiatives that has brought lasting development and meaningful tranformation to the Adentan Constituency. He&apos;s also creating opportunities, promoting education, and fostering sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change to Adentan Constituency and Ghana as a whole.
+
           </p>
-          <h5 className={`font-light text-sm capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${playwrite.className} `}>- Ramadan Adamu Mohammend</h5>
+          <h5 className={`font-bold text-xl  capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary   `} style={{ fontFamily: "TuesdayNight, sans-serif" }}>- Ramadan Adamu Mohammend</h5>
         </div>
         <div>
           <Image

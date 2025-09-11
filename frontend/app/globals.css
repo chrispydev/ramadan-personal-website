@@ -18,6 +18,13 @@
   --event-image: url('../public/events.jpg');
 }
 
+@font-face {
+  font-family: "TuesdayNight";
+  src: url("../public/fonts/TuesdayNight-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .background {
   background-size: cover;
