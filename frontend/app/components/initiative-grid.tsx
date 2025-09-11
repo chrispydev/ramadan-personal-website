@@ -8,7 +8,7 @@ import { client } from "@/sanity/client";
 const INITIATIVE_QUERY = `*[
   _type == "initiative"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
+]|order(publishedAt desc)[0...8]{_id, title, slug, publishedAt, image, description}`;
 
 const options = { next: { revalidate: 30 } };
 

@@ -5,7 +5,6 @@
   "/initiative/[slug]/page": "app/initiative/[slug]/page.js",
   "/initiative/page": "app/initiative/page.js",
   "/meet-ramadan/page": "app/meet-ramadan/page.js",
-  "/news/[slug]/page": "app/news/[slug]/page.js",
   "/news/page": "app/news/page.js",
   "/page": "app/page.js"
 }

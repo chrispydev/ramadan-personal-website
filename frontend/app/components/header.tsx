@@ -39,9 +39,9 @@ const slides: Slide[] = [
   {
     id: "img1",
     type: "image",
-    img: "/images/hero-slide.jpg",
+    img: "/slider/slide3.jpg",
     title: "Discover My Projects",
-    description: "Explore my skills, experiences, and achievements.",
+    description: "Environmental initiative \n\ In the up to the 2020 campaign",
   },
 ];
 
@@ -122,8 +122,8 @@ export default function HeroSliderWithModal() {
                 {/* background (poster or image) */}
                 {slide.type === "video" ? (
                   <Image
-                    width={800}
-                    height={450}
+                    width={450}
+                    height={550}
                     src={slide.poster}
                     alt={slide.title ?? "video poster"}
                     className="absolute top-0 left-0 w-full h-full object-cover bg-center"

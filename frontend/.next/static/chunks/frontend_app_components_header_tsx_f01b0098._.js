@@ -44,9 +44,9 @@ const slides = [
     {
         id: "img1",
         type: "image",
-        img: "/images/hero-slide.jpg",
+        img: "/slider/slide3.jpg",
         title: "Discover My Projects",
-        description: "Explore my skills, experiences, and achievements."
+        description: "Environmental initiative \n\ In the up to the 2020 campaign"
     }
 ];
 function HeroSliderWithModal() {
@@ -152,8 +152,8 @@ function HeroSliderWithModal() {
                                 className: "h-[450px] relative w-full",
                                 children: [
                                     slide.type === "video" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        width: 800,
-                                        height: 450,
+                                        width: 450,
+                                        height: 550,
                                         src: slide.poster,
                                         alt: (_slide_title = slide.title) !== null && _slide_title !== void 0 ? _slide_title : "video poster",
                                         className: "absolute top-0 left-0 w-full h-full object-cover bg-center",

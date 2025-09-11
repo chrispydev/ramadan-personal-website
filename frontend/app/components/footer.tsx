@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Footer = () => {
   return (
     <section className="mt-10 ">
@@ -14,10 +16,10 @@ const Footer = () => {
         <div className="space-y-8">
           <h5 className="font-black uppercase">Quick Links</h5>
           <ul className="text-sm space-y-4">
-            <li>Meet Ramadam</li>
-            <li>Initiative</li>
-            <li>Events</li>
-            <li>News</li>
+            <li><Link href={'/meet-ramadan'}>Meet Ramadan</Link></li>
+            <li><Link href={'/initiative'}>Initiative</Link></li>
+            <li><Link href={'/events'}>Events</Link></li>
+            <li><Link href={'/news'}>News</Link></li>
             <li>Contact Us</li>
           </ul>
         </div>
@@ -40,7 +42,7 @@ const Footer = () => {
         </div>
       </article>
       <div className="h-[1px] flex justify-center items-center mx-8 my-5 w-[95%] bg-black" />
-      <p className="text-center text-sm my-5">2025 © Dorcas Affo Toffey | All Rights Reserved</p>
+      <p className="text-center text-sm my-5">2025 © Mohammed Adamu Ramadan | All Rights Reserved</p>
     </section>
   )
 }

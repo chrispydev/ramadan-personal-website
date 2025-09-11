@@ -138,7 +138,6 @@
     --font-weight-extralight: 200;
     --font-weight-light: 300;
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --tracking-wide: .025em;
@@ -566,84 +565,20 @@
     right: calc(var(--spacing) * 2);
   }
 
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-
-  .bottom-2 {
-    bottom: calc(var(--spacing) * 2);
-  }
-
-  .bottom-8 {
-    bottom: calc(var(--spacing) * 8);
-  }
-
-  .bottom-9 {
-    bottom: calc(var(--spacing) * 9);
-  }
-
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
-  }
-
-  .bottom-13\.5 {
-    bottom: calc(var(--spacing) * 13.5);
-  }
-
-  .bottom-14 {
-    bottom: calc(var(--spacing) * 14);
-  }
-
-  .bottom-15 {
-    bottom: calc(var(--spacing) * 15);
   }
 
   .bottom-17 {
     bottom: calc(var(--spacing) * 17);
   }
 
-  .bottom-18 {
-    bottom: calc(var(--spacing) * 18);
-  }
-
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
 
-  .left-3 {
-    left: calc(var(--spacing) * 3);
-  }
-
-  .left-10 {
-    left: calc(var(--spacing) * 10);
-  }
-
-  .left-\[10\%\] {
-    left: 10%;
-  }
-
-  .left-\[15\%\] {
-    left: 15%;
-  }
-
-  .left-\[17\%\] {
-    left: 17%;
-  }
-
   .left-\[20\%\] {
     left: 20%;
-  }
-
-  .left-\[25\%\] {
-    left: 25%;
-  }
-
-  .left-\[30\%\] {
-    left: 30%;
-  }
-
-  .left-\[50\%\] {
-    left: 50%;
   }
 
   .z-10 {
@@ -940,10 +875,6 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .flex-col {
     flex-direction: column;
   }
@@ -1185,10 +1116,6 @@
     background-position: center;
   }
 
-  .bg-repeat {
-    background-repeat: repeat;
-  }
-
   .object-contain {
     object-fit: contain;
   }
@@ -1229,10 +1156,6 @@
     padding-inline: calc(var(--spacing) * .5);
   }
 
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
-
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -1243,10 +1166,6 @@
 
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
-  }
-
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
   }
 
   .px-8 {
@@ -1310,11 +1229,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 
   .text-sm {
@@ -1385,11 +1299,6 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-  }
-
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
   }
 
   .tracking-\[1rem\] {
@@ -1769,13 +1678,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:text-xl {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:leading-10 {
       --tw-leading: calc(var(--spacing) * 10);
       line-height: calc(var(--spacing) * 10);
@@ -1863,13 +1765,6 @@
   @media (min-width: 64rem) {
     .lg\:py-8 {
       padding-block: calc(var(--spacing) * 8);
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:text-lg {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
 

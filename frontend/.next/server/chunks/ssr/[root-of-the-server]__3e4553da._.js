@@ -248,7 +248,7 @@ const Events = async ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full md:w-1/2 p-5 md:h-[350px] lg:h-[320px] h-[300px] ",
                         style: {
-                            backgroundImage: `url(/events.jpg)`,
+                            backgroundImage: `url((/events.jpg))`,
                             backgroundSize: 'contain',
                             backgroundPosition: 'center'
                         }
@@ -625,7 +625,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$sanity$2f$client
 const INITIATIVE_QUERY = `*[
   _type == "initiative"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
+]|order(publishedAt desc)[0...8]{_id, title, slug, publishedAt, image, description}`;
 const options = {
     next: {
         revalidate: 30
@@ -759,7 +759,7 @@ const Volunteer = ()=>{
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "tracking-wider font-extralight text-sm",
-                        children: "Winning the 2020 elections with Dorcas Affo-Toffey requires a collective effort. Volunteerism is the key word for victory 2020. Self-organize, meet with people and deliver her messages. Dorcas is not a glimmer of hope but absolute hope! Talk to someone today!"
+                        children: "Winning the 2020 elections with Mohammend Adamu Ramadan requires a collective effort. Volunteerism is the key word for victory 2020. Self-organize, meet with people and deliver her messages. Dorcas is not a glimmer of hope but absolute hope! Talk to someone today!"
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/volunteer.tsx",
                         lineNumber: 13,
