@@ -20,7 +20,7 @@ const Footer = () => {
             <li><Link href={'/initiative'}>Initiative</Link></li>
             <li><Link href={'/events'}>Events</Link></li>
             <li><Link href={'/news'}>News</Link></li>
-            <li>Contact Us</li>
+            <li><Link href={'/contact-us'} >Contact Us</Link></li>
           </ul>
         </div>
         <div className="space-y-8">

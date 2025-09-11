@@ -23,7 +23,7 @@ const Navbar: FC = () => {
         <li>
           <NavLink href="/news" linkName="News" />
         </li>
-        <NavLink href="/" linkName="Contact Us" />
+        <NavLink href="/contact-us" linkName="Contact Us" />
       </ul>
       <button onClick={() => setIsOpen(!isOpen)} className='lg:hidden block cursor-pointer'>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 lg:hidden">

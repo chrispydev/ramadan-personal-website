@@ -62,7 +62,7 @@ export default async function PostPage({
   }
 
   const postImageUrl = initiative.image
-    ? urlFor(initiative.image)?.width(550).height(310).url()
+    ? urlFor(initiative.image)?.url()
     : null;
 
   return (
@@ -84,11 +84,11 @@ export default async function PostPage({
       )}
       {postImageUrl && (
         <Image
+          width={800}
+          height={300}
           src={postImageUrl}
           alt={initiative.title}
-          className="w-full object-contain"
-          width={550}
-          height={310}
+          className="w-full object-cover h-[400px] object-top"
         />
       )}
 

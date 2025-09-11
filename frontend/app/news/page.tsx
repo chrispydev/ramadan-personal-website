@@ -38,7 +38,6 @@ export default async function News() {
   const news = await client.fetch<SanityDocument[]>(NEWS_QUERY, {}, options);
 
 
-
   return (
     <section className="my-4 w-[90%] mx-auto">
       <div className="space-y-3">

@@ -42,6 +42,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$sanity$2f$client$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/sanity/client.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f40$sanity$2f$image$2d$url$2f$lib$2f$node$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/@sanity/image-url/lib/node/index.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -49,6 +51,11 @@ const EVENT_QUERY = `*[
   _type == "event"
   && defined(slug.current)
 ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
+const { projectId, dataset } = __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$sanity$2f$client$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["client"].config();
+const urlFor = (source)=>projectId && dataset ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f40$sanity$2f$image$2d$url$2f$lib$2f$node$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])({
+        projectId,
+        dataset
+    }).image(source) : null;
 const options = {
     next: {
         revalidate: 30
@@ -68,13 +75,13 @@ async function Events() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-full md:w-1/2 p-5 md:h-[350px] lg:h-[275px] h-[300px] ",
                                 style: {
-                                    backgroundImage: 'url(/events.jpg)',
+                                    backgroundImage: `url(${urlFor(event.image)?.url()})`,
                                     backgroundSize: 'contain',
-                                    backgroundPosition: 'center'
+                                    backgroundPosition: 'top'
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/events/page.tsx",
-                                lineNumber: 24,
+                                lineNumber: 34,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -85,7 +92,7 @@ async function Events() {
                                         children: "Events"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/events/page.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 37,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -98,7 +105,7 @@ async function Events() {
                                         children: event.title
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/events/page.tsx",
-                                        lineNumber: 28,
+                                        lineNumber: 38,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -109,7 +116,7 @@ async function Events() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/events/page.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 39,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -117,34 +124,34 @@ async function Events() {
                                         children: "READ MORE"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/events/page.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 42,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/events/page.tsx",
-                                lineNumber: 26,
+                                lineNumber: 36,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/events/page.tsx",
-                        lineNumber: 23,
+                        lineNumber: 33,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/frontend/app/events/page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 32,
                     columnNumber: 11
                 }, this)
             }, event._id, false, {
                 fileName: "[project]/frontend/app/events/page.tsx",
-                lineNumber: 20,
+                lineNumber: 30,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/frontend/app/events/page.tsx",
-        lineNumber: 18,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 }

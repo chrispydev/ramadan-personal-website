@@ -63,7 +63,7 @@ export default async function EventPage({
   }
 
   const postImageUrl = event.image
-    ? urlFor(event.image)?.width(550).height(310).url()
+    ? urlFor(event.image)?.url()
     : null;
 
   return (
@@ -85,11 +85,11 @@ export default async function EventPage({
       )}
       {postImageUrl && (
         <Image
+          width={800}
+          height={300}
           src={postImageUrl}
           alt={event.title}
-          className="w-full object-contain"
-          width={550}
-          height={310}
+          className="w-full object-cover h-[400px] object-top"
         />
       )}
 

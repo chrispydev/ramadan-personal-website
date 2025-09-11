@@ -43,7 +43,7 @@ const urlFor = (source: SanityImageSource) =>
     : null;
 
 const Initiate: FC<InitiateProps> = ({ imageRef, date, title, description }) => {
-  const imageUrl = imageRef ? urlFor(imageRef)?.width(300).height(200).url() : null;
+  const imageUrl = imageRef ? urlFor(imageRef)?.url() : null;
 
   return (
     <section className="space-y-2 mb-4">
@@ -53,7 +53,7 @@ const Initiate: FC<InitiateProps> = ({ imageRef, date, title, description }) => 
           alt={title ?? "initiative"}
           width={300}
           height={200}
-          className="w-[280px] h-[150px] object-center object-cover transition duration-500 hover:brightness-110"
+          className="w-[280px] h-[150px] object-top object-cover transition duration-500 hover:brightness-110"
         />
       )}
       <div className="flex justify-start items-center space-x-2">

@@ -1,11 +1,21 @@
 import Link from "next/link"
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 const EVENT_QUERY = `*[
   _type == "event"
   && defined(slug.current)
 ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
+
+
+const { projectId, dataset } = client.config();
+
+const urlFor = (source: SanityImageSource) =>
+  projectId && dataset
+    ? imageUrlBuilder({ projectId, dataset }).image(source)
+    : null;
 
 const options = { next: { revalidate: 30 } };
 
@@ -21,7 +31,7 @@ export default async function Events() {
 
           <article className="">
             <div className="flex flex-col justify-center md:flex-row h-full w-[90%] mx-auto">
-              <div className="w-full md:w-1/2 p-5 md:h-[350px] lg:h-[275px] h-[300px] " style={{ backgroundImage: 'url(/events.jpg)', backgroundSize: 'contain', backgroundPosition: 'center' }}>
+              <div className="w-full md:w-1/2 p-5 md:h-[350px] lg:h-[275px] h-[300px] " style={{ backgroundImage: `url(${urlFor(event.image)?.url()})`, backgroundSize: 'contain', backgroundPosition: 'top' }}>
               </div>
               <div className="bg-secondary text-white p-5 space-y-3 md:w-1/2">
                 <h3 className="text-2xl uppercase">Events</h3>
