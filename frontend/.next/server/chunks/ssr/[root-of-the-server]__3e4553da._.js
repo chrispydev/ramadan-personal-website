@@ -115,7 +115,7 @@ const AboutUs = ()=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        children: "Adenta A Town located at the Minicipal Assembly"
+                        children: "Mohammed Adamu Ramadan hails from Ashaley Botwe, a town located in the Adentan Constituency of the Greater Accra Region, Ghana."
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
                         lineNumber: 14,
@@ -177,6 +177,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$sanity$2f$client$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/sanity/client.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$crypto__$5b$external$5d$__$28$crypto$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/crypto [external] (crypto, cjs)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f40$sanity$2f$image$2d$url$2f$lib$2f$node$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/@sanity/image-url/lib/node/index.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -185,6 +187,11 @@ const EVENT_QUERY = `*[
   _type == "event"
   && defined(slug.current)
 ]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
+const { projectId, dataset } = __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$sanity$2f$client$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["client"].config();
+const urlFor = (source)=>projectId && dataset ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f40$sanity$2f$image$2d$url$2f$lib$2f$node$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])({
+        projectId,
+        dataset
+    }).image(source) : null;
 const options = {
     next: {
         revalidate: 30
@@ -197,7 +204,7 @@ const Events = async ()=>{
             children: "No events available"
         }, void 0, false, {
             fileName: "[project]/frontend/app/components/events.tsx",
-            lineNumber: 17,
+            lineNumber: 26,
             columnNumber: 12
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -215,13 +222,13 @@ const Events = async ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full md:w-1/2 p-5 md:h-[350px] lg:h-[320px] h-[300px] ",
                         style: {
-                            backgroundImage: 'url(/events.jpg)',
+                            backgroundImage: `url(/events.jpg)`,
                             backgroundSize: 'contain',
                             backgroundPosition: 'center'
                         }
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/events.tsx",
-                        lineNumber: 33,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -232,7 +239,7 @@ const Events = async ()=>{
                                 children: "Events"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/components/events.tsx",
-                                lineNumber: 36,
+                                lineNumber: 45,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -240,7 +247,7 @@ const Events = async ()=>{
                                 children: event.title
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/components/events.tsx",
-                                lineNumber: 37,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -248,7 +255,7 @@ const Events = async ()=>{
                                 children: event.description
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/components/events.tsx",
-                                lineNumber: 38,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -258,34 +265,34 @@ const Events = async ()=>{
                                     children: "READ MORE"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/components/events.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 52,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/components/events.tsx",
-                                lineNumber: 42,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/components/events.tsx",
-                        lineNumber: 35,
+                        lineNumber: 44,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/app/components/events.tsx",
-                lineNumber: 32,
+                lineNumber: 41,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/frontend/app/components/events.tsx",
-            lineNumber: 31,
+            lineNumber: 40,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/frontend/app/components/events.tsx",
-        lineNumber: 30,
+        lineNumber: 39,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -396,18 +403,18 @@ const Initiative = ()=>{
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "leading-6 mt-6 text-sm md:text-base",
-                            children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Donec sollicitudin molestie malesuada. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugia"
+                            children: "Mohammend Adamu Ramadan is dedicated to making a positive impact in the lives of individuals and communities. Through his initiatives, he strives to create opportunities, promote education, and foster sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change."
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/components/initiative-section.tsx",
                             lineNumber: 20,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                            className: `font-light text-sm underline md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$playwrite_ca_44f6d92f$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} `,
-                            children: "- John Doe, CEO"
+                            className: `font-light text-sm capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$playwrite_ca_44f6d92f$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} `,
+                            children: "- Ramadan Adamu Mohammend"
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                            lineNumber: 31,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -424,12 +431,12 @@ const Initiative = ()=>{
                         height: 530
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                        lineNumber: 34,
+                        lineNumber: 26,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/frontend/app/components/initiative-section.tsx",
-                    lineNumber: 33,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]

@@ -2,7 +2,6 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/events/[slug]/page": "app/events/[slug]/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/initiative/[slug]/page": "app/initiative/[slug]/page.js",
-  "/initiative/page": "app/initiative/page.js",
+  "/news/page": "app/news/page.js",
   "/page": "app/page.js"
 }

@@ -18,17 +18,9 @@ const Initiative = () => {
           </h2>
           <HorizontalLine height={5} />
           <p className="leading-6 mt-6 text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-            suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-            lacus vel facilisis. Curabitur non nulla sit amet nisl tempus convallis
-            quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae. Donec sollicitudin molestie malesuada.
-            Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit.
-            Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem
-            ut libero malesuada feugia
+            Mohammend Adamu Ramadan is dedicated to making a positive impact in the lives of individuals and communities. Through his initiatives, he strives to create opportunities, promote education, and foster sustainable development. His commitment to social responsibility and community engagement reflects his belief in the power of collective action to bring about meaningful change.
           </p>
-          <h5 className={`font-light text-sm underline md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${playwrite.className} `}>- John Doe, CEO</h5>
+          <h5 className={`font-light text-sm capitalize md:mt-6 mt-2 mb-5 md:mb-0 decoration-primary italic ${playwrite.className} `}>- Ramadan Adamu Mohammend</h5>
         </div>
         <div>
           <Image
