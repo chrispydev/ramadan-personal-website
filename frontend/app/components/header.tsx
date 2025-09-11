@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,9 +12,9 @@ import "swiper/css/pagination";
 type Slide = {
   id: string;
   type: "video" | "image";
-  poster?: string; // shown in the slide
-  src?: string; // only for video (public path: /videos/...)
-  img?: string; // for image slides (public path: /images/...)
+  poster?: string | undefined; // shown in the slide
+  src?: string | undefined; // only for video (public path: /videos/...)
+  img?: string | undefined; // for image slides (public path: /images/...)
   title?: string;
   description?: string;
 };
@@ -22,7 +23,7 @@ const slides: Slide[] = [
   {
     id: "v1",
     type: "video",
-    poster: "/images/portfolio-poster.jpg",
+    poster: "/slider/slider1.jpg",
     src: "/videos/video1.mp4",
     title: "Welcome to My Portfolio",
     description: "Watch my journey and projects in action.",
@@ -30,7 +31,7 @@ const slides: Slide[] = [
   {
     id: "v2",
     type: "video",
-    poster: "/images/portfolio-poster-2.jpg",
+    poster: "/slider/slider2.jpg",
     src: "/videos/video2.mp4",
     title: "Project Showcase",
     description: "I commissioned a CHPS compound at Forster Home Nsuonano.",
@@ -120,17 +121,21 @@ export default function HeroSliderWithModal() {
               <article className="h-[450px] relative w-full">
                 {/* background (poster or image) */}
                 {slide.type === "video" ? (
-                  <img
+                  <Image
+                    width={800}
+                    height={450}
                     src={slide.poster}
                     alt={slide.title ?? "video poster"}
-                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    className="absolute top-0 left-0 w-full h-full object-cover bg-center"
                     draggable={false}
                   />
                 ) : (
-                  <img
+                  <Image
+                    width={800}
+                    height={450}
                     src={slide.img}
                     alt={slide.title ?? "slide image"}
-                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    className="absolute top-0 left-0 w-full h-full object-cover bg-center"
                     draggable={false}
                   />
                 )}

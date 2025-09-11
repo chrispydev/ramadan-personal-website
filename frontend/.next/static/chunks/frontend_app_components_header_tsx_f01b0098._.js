@@ -13,9 +13,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$swiper$2f$modules$2f$navigation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Navigation$3e$__ = __turbopack_context__.i("[project]/frontend/node_modules/swiper/modules/navigation.mjs [app-client] (ecmascript) <export default as Navigation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$swiper$2f$modules$2f$pagination$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pagination$3e$__ = __turbopack_context__.i("[project]/frontend/node_modules/swiper/modules/pagination.mjs [app-client] (ecmascript) <export default as Pagination>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__ = __turbopack_context__.i("[project]/frontend/node_modules/swiper/modules/autoplay.mjs [app-client] (ecmascript) <export default as Autoplay>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -26,7 +28,7 @@ const slides = [
     {
         id: "v1",
         type: "video",
-        poster: "/images/portfolio-poster.jpg",
+        poster: "/slider/slider1.jpg",
         src: "/videos/video1.mp4",
         title: "Welcome to My Portfolio",
         description: "Watch my journey and projects in action."
@@ -34,7 +36,7 @@ const slides = [
     {
         id: "v2",
         type: "video",
-        poster: "/images/portfolio-poster-2.jpg",
+        poster: "/slider/slider2.jpg",
         src: "/videos/video2.mp4",
         title: "Project Showcase",
         description: "I commissioned a CHPS compound at Forster Home Nsuonano."
@@ -149,30 +151,34 @@ function HeroSliderWithModal() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                                 className: "h-[450px] relative w-full",
                                 children: [
-                                    slide.type === "video" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    slide.type === "video" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        width: 800,
+                                        height: 450,
                                         src: slide.poster,
                                         alt: (_slide_title = slide.title) !== null && _slide_title !== void 0 ? _slide_title : "video poster",
-                                        className: "absolute top-0 left-0 w-full h-full object-cover",
+                                        className: "absolute top-0 left-0 w-full h-full object-cover bg-center",
                                         draggable: false
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/components/header.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 124,
                                         columnNumber: 19
-                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        width: 800,
+                                        height: 450,
                                         src: slide.img,
                                         alt: (_slide_title1 = slide.title) !== null && _slide_title1 !== void 0 ? _slide_title1 : "slide image",
-                                        className: "absolute top-0 left-0 w-full h-full object-cover",
+                                        className: "absolute top-0 left-0 w-full h-full object-cover bg-center",
                                         draggable: false
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/components/header.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 133,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute inset-0 bg-black/35"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/app/components/header.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 144,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -183,7 +189,7 @@ function HeroSliderWithModal() {
                                                 children: slide.title
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/components/header.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 148,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -191,7 +197,7 @@ function HeroSliderWithModal() {
                                                 children: slide.description
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/components/header.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 149,
                                                 columnNumber: 19
                                             }, this),
                                             slide.type === "video" && slide.src && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -207,45 +213,45 @@ function HeroSliderWithModal() {
                                                         d: "M5.5 3.5v17l14-8.5-14-8.5z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/app/components/header.tsx",
-                                                        lineNumber: 159,
+                                                        lineNumber: 164,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/app/components/header.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 158,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/app/components/header.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 153,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/app/components/header.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 147,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/app/components/header.tsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 15
                             }, this)
                         }, slide.id, false, {
                             fileName: "[project]/frontend/app/components/header.tsx",
-                            lineNumber: 119,
+                            lineNumber: 120,
                             columnNumber: 13
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/frontend/app/components/header.tsx",
-                    lineNumber: 106,
+                    lineNumber: 107,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/app/components/header.tsx",
-                lineNumber: 105,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             isOpen && currentVideoSrc && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -266,7 +272,7 @@ function HeroSliderWithModal() {
                             children: "✕"
                         }, void 0, false, {
                             fileName: "[project]/frontend/app/components/header.tsx",
-                            lineNumber: 182,
+                            lineNumber: 187,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
@@ -281,25 +287,25 @@ function HeroSliderWithModal() {
                                     type: "video/mp4"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/app/components/header.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 202,
                                     columnNumber: 15
                                 }, this),
                                 "Your browser does not support the video tag."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/app/components/header.tsx",
-                            lineNumber: 190,
+                            lineNumber: 195,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/app/components/header.tsx",
-                    lineNumber: 181,
+                    lineNumber: 186,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/app/components/header.tsx",
-                lineNumber: 172,
+                lineNumber: 177,
                 columnNumber: 9
             }, this)
         ]

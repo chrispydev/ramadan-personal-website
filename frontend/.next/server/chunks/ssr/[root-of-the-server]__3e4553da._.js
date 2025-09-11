@@ -65,80 +65,106 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$app$2f$component
 ;
 ;
 ;
+// <section className="flex flex-col md:flex-row justify-center items-start md:gap-10 md:pt-19 pt-0 mb-4 mx-4">
 const AboutUs = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "flex flex-col md:flex-row justify-center items-start md:gap-10 md:pt-19 pt-0 mb-4 mx-4",
+        className: "grid md:grid-cols-2 grid-cols-1 gap-8 md:py-8 py-2 md:px-8 px-3",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                className: "lg:w-full h-[500px] lg:h-[540px] object-contain -mb-4 md:mb-0",
-                src: "/about-us.jpg",
-                alt: "About Us",
-                width: 500,
-                height: 400
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                        className: "lg:w-full h-[500px] lg:h-[540px] object-contain -mb-4 md:mb-0",
+                        src: "/about-us.jpg",
+                        alt: "About Us",
+                        width: 500,
+                        height: 400
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/app/components/about-us.tsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "absolute md:bottom-13.5 bottom-17 bg-secondary text-white uppercase text-sm md:text-lg lg:text-xl text-center font-black md:py-5 md:px-2 lg:py-8 px-4 py-8",
+                        children: "Accounting to the good people of Adentan Constituency"
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/app/components/about-us.tsx",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "absolute bottom-10 md:left-[20%] left-[20%] lg:left-[30%] bg-primary text-white uppercase text-sm text-center font-light py-2 px-4",
+                        children: "Still working for you"
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/app/components/about-us.tsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
                 fileName: "[project]/frontend/app/components/about-us.tsx",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col justify-start items-start text-left space-y-2 leading-10",
+                className: "flex flex-col justify-start items-start text-left space-y-2 md:leading-10 leading-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                         className: "text-2xl md:text-3xl font-bold text-center text-gray-700",
                         children: "About Us"
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
-                        lineNumber: 9,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-2xl font-black uppercase ",
+                        className: "text-2xl font-black uppercase",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-secondary",
                                 children: "Meet"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/app/components/about-us.tsx",
-                                lineNumber: 12,
-                                columnNumber: 56
+                                lineNumber: 19,
+                                columnNumber: 55
                             }, ("TURBOPACK compile-time value", void 0)),
                             " Mohammed Adamu Ramadan "
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
-                        lineNumber: 12,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$app$2f$components$2f$horizontal$2d$line$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
-                        lineNumber: 13,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Mohammed Adamu Ramadan hails from Ashaley Botwe, a town located in the Adentan Constituency of the Greater Accra Region, Ghana."
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
-                        lineNumber: 14,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "bg-secondary text-white py-2 px-6 rounded",
+                        className: "bg-secondary text-white md:py-2 md:px-6 px-3 py-1 rounded",
                         children: "Meet Ramadan"
                     }, void 0, false, {
                         fileName: "[project]/frontend/app/components/about-us.tsx",
-                        lineNumber: 15,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/app/components/about-us.tsx",
-                lineNumber: 8,
+                lineNumber: 15,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/app/components/about-us.tsx",
-        lineNumber: 6,
+        lineNumber: 9,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
