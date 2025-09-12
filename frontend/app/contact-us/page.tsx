@@ -69,11 +69,11 @@ export default function ContactUs() {
 
 
   return (
-    <section className="pt-10 w-[90%] mx-auto grid grid-cols-2">
+    <section className="pt-10 w-[90%] mx-auto grid md:grid-cols-2 grid-cols-1">
       <article>
         <div>
           <h4 className="text-2xl uppercase mb-1 font-bold">Contact Details</h4>
-          <div className="w-20 h-2 bg-secondary" />
+          <div className="w-25 h-2 bg-secondary" />
         </div>
         <div className="flex flex-col justify-center my-8 items-start space-y-4">
           <div className="flex justify-center items-start gap-8">

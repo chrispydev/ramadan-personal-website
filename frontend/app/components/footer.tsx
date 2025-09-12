@@ -28,8 +28,8 @@ const Footer = () => {
           <ul className="text-sm space-y-4">
             <li>Our Team</li>
             <li>Our Projects</li>
-            <li>Privary Policy</li>
-            <li>Terms and Conditions</li>
+            <li><Link href={"/privary-and-policy"}>Privary Policy</Link></li>
+            <li><Link href={"/terms-and-conditions"}>Terms and Conditions</Link></li>
             <li><Link href={'/contact-us'} >Contact Us</Link></li>
           </ul>
         </div>
