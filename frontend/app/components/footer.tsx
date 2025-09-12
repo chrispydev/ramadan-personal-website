@@ -30,7 +30,7 @@ const Footer = () => {
             <li>Our Projects</li>
             <li>Privary Policy</li>
             <li>Terms and Conditions</li>
-            <li>Contact Us</li>
+            <li><Link href={'/contact-us'} >Contact Us</Link></li>
           </ul>
         </div>
         <div className="space-y-8">

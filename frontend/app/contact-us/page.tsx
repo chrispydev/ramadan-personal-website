@@ -70,24 +70,6 @@ export default function ContactUs() {
 
   return (
     <section className="pt-10 w-[90%] mx-auto grid grid-cols-2">
-      {status.info.error && (
-        <div
-          className='bg-red-100 border border-red-400 text-secondary px-4 py-3 rounded relative'
-          role='alert'
-        >
-          <strong className='font-bold'>Error</strong>:
-          <span className='block sm:inline'>Message not sent????</span>
-        </div>
-      )}
-
-      {status.info.msg && (
-        <div
-          className='bg-red-100 border border-dColor text-dColor px-4 py-3 rounded relative'
-          role='alert'
-        >
-          <span className='block sm:inline'>Message sent 👍</span>
-        </div>
-      )}
       <article>
         <div>
           <h4 className="text-2xl uppercase mb-1 font-bold">Contact Details</h4>
@@ -134,6 +116,24 @@ export default function ContactUs() {
           <h4 className="text-2xl uppercase mb-1 font-bold">get in touch</h4>
           <div className="w-20 h-2 bg-secondary" />
         </div>
+        {status.info.error && (
+          <div
+            className='bg-red-100 border border-red-400 text-secondary px-4 py-3 my-4 rounded relative'
+            role='alert'
+          >
+            <strong className='font-bold'>Error</strong>:
+            <span className='block sm:inline'>Message not sent????</span>
+          </div>
+        )}
+
+        {status.info.msg && (
+          <div
+            className='bg-red-100 border border-dColor text-dColor px-4 py-3 my-4 rounded relative'
+            role='alert'
+          >
+            <span className='block sm:inline'>Message sent 👍</span>
+          </div>
+        )}
         <form className="my-8 flex flex-col gap-4">
           <div className="space-x-8 grid md:grid-cols-2 grid-cols-1 gap-4">
             <input type="text" placeholder="Full Name" className="py-2 px-4 w-full outline-secondary border-1 border-grayText" onChange={(e) => setFullName(e.target.value)} value={fullName} />            <input type="tel" placeholder="Phone Number" className="py-2 w-full px-4 outline-secondary border-1 border-grayText" onChange={(e) => setPhoneNumber(e.target.value)} value={phoneNumber} />
