@@ -3,7 +3,7 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <section className="mt-10 ">
-      <article className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 px-8">
+      <article className="grid md:grid-cols-4 grid-cols-2  gap-8 px-8">
         <div className="space-y-8">
           <h5 className="font-black uppercase">Socal Media</h5>
           <ul className="text-sm space-y-4">
