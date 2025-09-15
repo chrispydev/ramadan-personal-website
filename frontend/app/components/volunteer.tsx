@@ -13,7 +13,7 @@ const Volunteer = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
+    setLoading(true)
     setMessage("");
 
     try {
@@ -41,7 +41,7 @@ const Volunteer = () => {
     }
   };
   return (
-    <section className="bg-primary text-white md:py-8 py-4 px-4 md:px-10 my-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section id="#volunteer" className="bg-primary text-white md:py-8 py-4 px-4 md:px-10 my-5 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="flex flex-col justify-start items-start space-y-8 w-full mr-8">
         <h4 className="text-2xl uppercase tracking-wider">Volunteer</h4>
         <div className="flex flex-col justify-start items-start">

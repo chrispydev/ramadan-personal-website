@@ -10,7 +10,7 @@ const NavLink: FC<NavLinkProps> = ({ href, linkName }) => {
 
   return (
     <div>
-      <Link href={href} className="font-light text-sm uppercase hover:text-primary hover:font-black ">
+      <Link scroll={false} href={href} className="font-light text-sm uppercase hover:text-primary hover:font-black ">
         {linkName}
       </Link>
     </div>

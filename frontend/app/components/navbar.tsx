@@ -32,18 +32,19 @@ const Navbar: FC = () => {
       </button>
       {isOpen && <>
         <ul className="lg:hidden flex flex-col justify-center items-start px-4 py-4 space-y-5 absolute z-50 top-full md:w-[20%] right-0 bg-white shadow-md">
-          <li className='hover:ml-4 transition-all duration-500'>
-            <NavLink href="/" linkName="Initiative" />
+          <li>
+            <NavLink href="/meet-ramadan" linkName="Meet Ramadan" />
           </li>
-          <li className='hover:ml-4 transition-all duration-500'>
-            <NavLink href="/" linkName="Events" />
+          <li>
+            <NavLink href="/initiative" linkName="Initiative" />
           </li>
-          <li className='hover:ml-4 transition-all duration-500'>
-            <NavLink href="/" linkName="News" />
+          <li>
+            <NavLink href="/events" linkName="Events" />
           </li>
-          <li className='hover:ml-4 transition-all duration-500'>
-            <NavLink href="/" linkName="Contact Us" />
+          <li>
+            <NavLink href="/news" linkName="News" />
           </li>
+          <NavLink href="/contact-us" linkName="Contact Us" />
         </ul>
       </>}
     </header>

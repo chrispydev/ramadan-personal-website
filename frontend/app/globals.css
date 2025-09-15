@@ -30,6 +30,7 @@
   /* darkness level */
   background-blend-mode: multiply;
   /* blends black with image */
+  scroll-behavior: smooth;
 }
 
 .slider-bg-1 {
