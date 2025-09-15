@@ -39,11 +39,11 @@ const Events = async () => {
     <section className="my-4 ">
       <article className="">
         <div className="flex flex-col justify-center md:flex-row h-full w-[90%] mx-auto">
-          <div className="w-full md:w-1/2 p-5 md:h-[350px] lg:h-[320px] h-[300px] " style={{ backgroundImage: `url(${urlFor(event.image)?.url()})`, backgroundSize: 'contain', backgroundPosition: 'center' }}>
+          <div className="w-full md:w-1/2 p-5  md:h-[300px] h-[350px] " style={{ backgroundImage: `url(${urlFor(event.image)?.url()})`, backgroundSize: 'contain', backgroundPosition: 'center' }}>
           </div>
           <div className="bg-secondary text-white p-5 space-y-3 md:w-1/2">
             <h3 className="text-2xl uppercase">Events</h3>
-            <h2 className="font-bold text-3xl">{event.title}</h2>
+            <h2 className="font-bold text-3xl line-clamp-2">{event.title}</h2>
             <p className="text-sm">
               {event.description}
             </p>

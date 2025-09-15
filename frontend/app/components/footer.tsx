@@ -1,6 +1,45 @@
+"use client";
+
 import Link from "next/link"
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setMessage("🎉 Subscribed successfully!");
+        setEmail("");
+      } else {
+        setMessage(data.error || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      setMessage("⚠️ Failed to subscribe.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section className="mt-10 ">
       <article className="grid md:grid-cols-4 grid-cols-2  gap-8 px-8">
@@ -34,10 +73,19 @@ const Footer = () => {
         </div>
         <div className="space-y-8">
           <h5 className="font-black uppercase">News Letter</h5>
-          <form className="flex flex-col justify-center items-center space-y-8">
-            <input id="email" name="email" type="email" className="bg-white py-3 px-4 text-gray-900 w-full focus:outline-0 shadow" placeholder="Youremail@volunteer.com" />
-            <button className="bg-secondary py-3 px-4 text-white  tracking-wide font-extralight w-full">SUBMIT</button>
+          <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center space-y-8">
+            <input id="email" name="email" type="email" value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="bg-white py-3 px-4 text-gray-900 w-full focus:outline-0 shadow" placeholder="Youremail@volunteer.com" />
+            <button
+              type="submit"
+              disabled={loading}
+              className="bg-secondary py-3 px-4 text-white tracking-wide font-extralight w-full disabled:opacity-50 cursor-pointer"
+            >
+              {loading ? "Submitting..." : "SUBMIT"}
+            </button>
           </form>
+          {message && <p className="text-center text-sm">{message}</p>}
         </div>
       </article>
       <div className="h-[1px] flex justify-center items-center mx-8 my-5 w-[95%] bg-black" />

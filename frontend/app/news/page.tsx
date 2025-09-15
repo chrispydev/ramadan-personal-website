@@ -6,10 +6,6 @@ import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-const NEWS_QUERY = `*[
-  _type == "news"
-  && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, image, description}`;
 
 const { projectId, dataset } = client.config();
 
@@ -20,6 +16,16 @@ const urlFor = (source: SanityImageSource) =>
 
 const options = { next: { revalidate: 30 } };
 
+
+const PER_PAGE = 9; // Number of news posts per page
+
+const NEWS_QUERY = (start: number, end: number) => `*[
+  _type == "news" && defined(slug.current)
+]|order(publishedAt desc)[${start}...${end}]{
+  _id, title, slug, publishedAt, image, description
+}`;
+
+const TOTAL_COUNT_QUERY = `count(*[_type == "news" && defined(slug.current)])`;
 
 
 function formatDate(dateString?: string) {
@@ -34,9 +40,17 @@ function formatDate(dateString?: string) {
   return `${day} ${month} `;
 }
 
-export default async function News() {
-  const news = await client.fetch<SanityDocument[]>(NEWS_QUERY, {}, options);
+export default async function News({ searchParams }: { searchParams?: { page?: string } }) {
+  const currentPage = Number(searchParams?.page) || 1;
+  const start = (currentPage - 1) * PER_PAGE;
+  const end = start + PER_PAGE;
 
+  // Fetch paginated news
+  const news = await client.fetch<SanityDocument[]>(NEWS_QUERY(start, end), {}, options);
+
+  // Fetch total count
+  const total = await client.fetch<number>(TOTAL_COUNT_QUERY);
+  const totalPages = Math.ceil(total / PER_PAGE);
 
   return (
     <section className="my-4 w-[90%] mx-auto">
@@ -63,14 +77,37 @@ export default async function News() {
                   <p className="text-white bg-secondary py-2 px-3 font-bold">{formatDate(news.publishedAt)}</p>
                 </div>
                 <div className="">
-                  <h2 className="font-black text-md mb-2 uppercase">{news.title}</h2>
-                  <p className="text-sm text-gray-600 trancate-4">{news.description}</p>
+                  <h2 className="font-black text-md mb-2 uppercase line-clamp-2">{news.title}</h2>
+                  <p className="text-sm text-gray-600 line-clamp-4">{news.description}</p>
                 </div>
               </div>
             </div>
           </Link>
         ))}
       </article>
+
+      {/* Pagination Controls */}
+      <div className="flex justify-center gap-4 my-10">
+        {currentPage > 1 && (
+          <Link
+            href={`?page=${currentPage - 1}`}
+            className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300"
+          >
+            Previous
+          </Link>
+        )}
+        <span className="px-4 py-2">
+          Page {currentPage} of {totalPages}
+        </span>
+        {currentPage < totalPages && (
+          <Link
+            href={`?page=${currentPage + 1}`}
+            className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300"
+          >
+            Next
+          </Link>
+        )}
+      </div>
     </section>
   )
 }
