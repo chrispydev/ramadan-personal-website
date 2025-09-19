@@ -1,5 +1,6 @@
 import Image from "next/image"
 import HorizontalLine from "./horizontal-line"
+import Link from 'next/link'
 
 
 // <section className="flex flex-col md:flex-row justify-center items-start md:gap-10 md:pt-19 pt-0 mb-4 mx-4">
@@ -19,7 +20,9 @@ const AboutUs = () => {
         <h2 className="text-2xl font-black uppercase"><span className="text-secondary">Meet</span> Mohammed Adamu Ramadan </h2>
         <HorizontalLine />
         <p>Mohammed Adamu Ramadan hails from Ashaley Botwe, a town located in the Adentan Constituency of the Greater Accra Region, Ghana.</p>
-        <button className="bg-secondary text-white md:py-2 md:px-6 px-3 py-1 rounded">Meet Ramadan</button>
+        <Link href="/meet-ramadan">
+          <button className="bg-secondary text-white cursor-pointer md:py-2 md:px-6 px-3 py-1 rounded">Meet Ramadan</button>
+        </Link>
       </div>
     </section>
 

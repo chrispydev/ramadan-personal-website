@@ -17,7 +17,7 @@ const Volunteer = () => {
     setMessage("");
 
     try {
-      const res = await fetch("/api/newsletter", {
+      const res = await fetch("/api/volunteer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,7 +28,7 @@ const Volunteer = () => {
       const data = await res.json();
 
       if (res.ok) {
-        setMessage("🎉 Subscribed successfully!");
+        setMessage("🎉 Thank you for volunteering!");
         setEmail("");
       } else {
         setMessage(data.error || "Something went wrong.");

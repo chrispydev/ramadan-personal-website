@@ -76,7 +76,7 @@ const Footer = () => {
           <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center space-y-8">
             <input id="email" name="email" type="email" value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-white py-3 px-4 text-gray-900 w-full focus:outline-0 shadow" placeholder="Youremail@volunteer.com" />
+              className="bg-white py-3 px-4 text-gray-900 w-full focus:outline-0 shadow" placeholder="Youremail@gmail.com" />
             <button
               type="submit"
               disabled={loading}
