@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Swiper as SwiperClass } from "swiper"; // <- import Swiper type
 import Image from "next/image";
 
 import "swiper/css";
@@ -12,9 +13,9 @@ import "swiper/css/pagination";
 type Slide = {
   id: string;
   type: "video" | "image";
-  poster?: string | any; // shown in the slide
+  poster?: string ; // shown in the slide
   src?: string | undefined; // only for video (public path: /videos/...)
-  img?: string | any; // for image slides (public path: /images/...)
+  img?: string; // for image slides (public path: /images/...)
   title?: string;
   description?: string;
 };
@@ -50,7 +51,7 @@ export default function HeroSliderWithModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentVideoSrc, setCurrentVideoSrc] = useState<string | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const swiperRef = useRef<any | null>(null);
+ const swiperRef = useRef<SwiperClass | null>(null);
 
   // Stop/start autoplay & page scroll when modal opens/closes
   useEffect(() => {
@@ -125,7 +126,7 @@ export default function HeroSliderWithModal() {
                   <Image
                     width={450}
                     height={550}
-                    src={slide.poster}
+                    src={slide.poster ?? "/fallback-poster.jpg"} // fallback image
                     alt={slide.title ?? "video poster"}
                     className="absolute top-0 left-0 w-full h-full object-cover bg-center"
                     draggable={false}
@@ -134,7 +135,7 @@ export default function HeroSliderWithModal() {
                   <Image
                     width={800}
                     height={450}
-                    src={slide.img}
+                     src={slide.poster ?? "/fallback-poster.jpg"} // fallback image
                     alt={slide.title ?? "slide image"}
                     className="absolute top-0 left-0 w-full h-full object-cover bg-center"
                     draggable={false}

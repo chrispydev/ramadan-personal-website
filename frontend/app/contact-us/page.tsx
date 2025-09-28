@@ -3,7 +3,7 @@ import { FaRegPaperPlane } from "react-icons/fa";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
-import { useState, HTMLInputTypeAttribute } from 'react'
+import React, { useState, HTMLInputTypeAttribute } from 'react'
 import axios from "axios";
 
 export default function ContactUs() {
@@ -48,7 +48,7 @@ export default function ContactUs() {
     }
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
     setStatus({
       submitted: false,

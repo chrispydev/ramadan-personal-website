@@ -1,11 +1,11 @@
 import Image from "next/image"
 import HorizontalLine from "./horizontal-line"
-import { Playwrite_CA } from "next/font/google"
+// import { Playwrite_CA } from "next/font/google"
 
-const playwrite = Playwrite_CA({
-  variable: "--font-playwrite-canyon",
-  weight: ["100", "200", "300", "400"],
-})
+// const playwrite = Playwrite_CA({
+//   variable: "--font-playwrite-canyon",
+//   weight: ["100", "200", "300", "400"],
+// })
 
 
 const Initiative = () => {
