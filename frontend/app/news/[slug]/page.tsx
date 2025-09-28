@@ -122,7 +122,7 @@ export default async function EventPage({
           </div>
           <div className="h-2 w-20 bg-secondary mb-8" />
         </div>
-        {related_events.map((related_event) => {
+        {related_news.map((related_event) => {
           const imageUrl = related_event.image
             ? urlFor(related_event.image)?.url()
             : null;
