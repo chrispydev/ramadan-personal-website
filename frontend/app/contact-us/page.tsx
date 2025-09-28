@@ -59,7 +59,7 @@ export default function ContactUs() {
     const body = { 'Subject': subject, 'PhoneNumber': phoneNumber, 'message': message }
 
     axios
-      .post(process.env.NEXT_PUBLIC_FORMSPREE_URL, {
+      .post(process.env.NEXT_PUBLIC_FORMSPREE_URL ?? '', {
         data: { fullName: fullName, email: email, message: body },
       })
       .then((_response) => {

@@ -12,9 +12,9 @@ import "swiper/css/pagination";
 type Slide = {
   id: string;
   type: "video" | "image";
-  poster?: string | undefined; // shown in the slide
+  poster?: string | any; // shown in the slide
   src?: string | undefined; // only for video (public path: /videos/...)
-  img?: string | undefined; // for image slides (public path: /images/...)
+  img?: string | any; // for image slides (public path: /images/...)
   title?: string;
   description?: string;
 };

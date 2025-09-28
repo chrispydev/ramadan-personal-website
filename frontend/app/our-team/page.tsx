@@ -13,7 +13,7 @@ export default function OurTeams() {
           <Team name="Mohammed Adamu Ramadan" imgSrc="/team.jpg" role="Member of Parliament" show />
           <div className="flex justify-center items-center gap-4">
             <Team name="Osman Issaka" imgSrc="/team1.jpeg" role="Special Assistant" />
-            <Team name="Edem Rudolof Agbenorku" imgSrc="/team3.jpeg" role="Research Assistant" />
+            <Team name="Edem Rudolf Agbenorku" imgSrc="/team3.jpeg" role="Research Assistant" />
             <Team name="Promise Kwesi Oniwor" imgSrc="/team2.jpeg" role="Administrative Assistant" />
             <Team name="Jane Asiwome" imgSrc="/team4.jpeg" role="Secetery" />
           </div>

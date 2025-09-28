@@ -56,7 +56,7 @@ const Volunteer = () => {
         {message && <p className="text-sm">{message}</p>}
       </div>
       <div className="float-end">
-        <Image className="rounded" src={'/play-a-role.jpg'} alt="about Ramadan Adamu" width={800} height={800} />
+        <Image className="rounded-lg" src={'/play-a-role.jpg'} alt="about Ramadan Adamu" width={800} height={800} />
       </div>
     </section>
   )
