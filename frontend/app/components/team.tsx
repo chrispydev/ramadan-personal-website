@@ -24,7 +24,6 @@ const Team: React.FC<TeamProps> = ({ imgSrc, name, role, show }) => {
             <h3 className="font-black text-center">{name}</h3>
             <h5 className="text-grayText text-sm bg-secondary text-white py-2 px-4 shadow-md text-center">{role}</h5>
           </div>
-
         )
         }
       </div>

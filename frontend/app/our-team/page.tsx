@@ -15,14 +15,18 @@ export default function OurTeams() {
             <Team name="Osman Issaka" imgSrc="/team1.jpeg" role="Special Assistant" />
             <Team name="Edem Rudolof Agbenorku" imgSrc="/team3.jpeg" role="Research Assistant" />
             <Team name="Promise Kwesi Oniwor" imgSrc="/team2.jpeg" role="Administrative Assistant" />
-            <Team name="Jane Asiwome" imgSrc="/team2.jpeg" role="Secetery" />
+            <Team name="Jane Asiwome" imgSrc="/team4.jpeg" role="Secetery" />
           </div>
 
           <div>
             {/* Volunteerism*/}
-            <h1 className="text-2xl font-bold uppercase text-center underline">Volunteers</h1>
-            <div>
-              <Team name="Jane Asiwome" imgSrc="/team2.jpeg" role="Secetery" />
+            <h1 className="text-2xl font-bold uppercase text-center underline mt-8">Volunteers</h1>
+            <div className="flex flex-wrap justify-center items-center gap-8 ">
+              <Image src={'/v1.jpg'} alt="Our Team" width={300} height={500} className="mt-8 rounded-lg shadow-lg h-[200px] w-[200px] object-cover" />
+              <Image src={'/v2.jpg'} alt="Our Team" width={300} height={500} className="mt-8 rounded-lg shadow-lg h-[200px] w-[200px] object-cover" />
+              <Image src={'/v3.jpg'} alt="Our Team" width={300} height={500} className="mt-8 rounded-lg shadow-lg h-[200px] w-[200px] object-cover" />
+              <Image src={'/v4.jpg'} alt="Our Team" width={300} height={500} className="mt-8 rounded-lg shadow-lg h-[200px] w-[200px] object-cover" />
+              <Image src={'/v5.jpg'} alt="Our Team" width={300} height={500} className="mt-8 rounded-lg shadow-lg h-[200px] w-[200px] object-cover" />
             </div>
           </div>
         </article>
