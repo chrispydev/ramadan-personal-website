@@ -48,7 +48,7 @@ const Volunteer = () => {
           <h1 className="text-4xl uppercase font-black">Play a Role</h1>
           <HorizontalLine height={5} />
         </div>
-        <p className="tracking-wider font-extralight text-sm">Winning the 2020 elections with Mohammend Adamu Ramadan requires a collective effort. Volunteerism is the key word for victory 2020. Self-organize, meet with people and deliver her messages. Dorcas is not a glimmer of hope but absolute hope! Talk to someone today!</p>
+        <p className="tracking-wider font-extralight text-sm">Winning the 2020 and 2024 elections with Mohammend Adamu Ramadan requires a collective effort. Volunteerism is the key word for victory 2020. Self-organize, meet with people and deliver her messages. Ramadan is not a glimmer of hope but absolute hope! Talk to someone today!</p>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 place-items-start gap-4 w-full">
           <input onChange={(e) => setEmail((e.target.value))} value={email} id="email" name="email" type="email" className="bg-white py-3 w-full px-4 text-gray-900 focus:outline-0 shadow" placeholder="Youremail@volunteer.com" />
           <button disabled={loading} type="submit" className="bg-secondary py-3 px-4 text-white w-full  tracking-wide font-black">{loading ? 'Submitting...' : 'SIGN UP TO VOLUNTEER'}</button>
@@ -56,7 +56,7 @@ const Volunteer = () => {
         {message && <p className="text-sm">{message}</p>}
       </div>
       <div className="float-end">
-        <Image src={'/about-us-removebg-preview.png'} alt="about Ramadan Adamu" width={400} height={400} />
+        <Image className="rounded" src={'/play-a-role.jpg'} alt="about Ramadan Adamu" width={800} height={800} />
       </div>
     </section>
   )

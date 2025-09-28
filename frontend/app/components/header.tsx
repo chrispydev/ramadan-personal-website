@@ -37,9 +37,10 @@ const slides: Slide[] = [
     description: "I commissioned a CHPS compound at Forster Home Nsuonano.",
   },
   {
-    id: "img1",
-    type: "image",
-    img: "/slider/slide3.jpg",
+    id: "v3",
+    type: "video",
+    poster: "/slider/slide3.jpg",
+    src: "/videos/video3.mp4",
     title: "Discover My Projects",
     description: "Environmental initiative \n\ In the up to the 2020 campaign",
   },
