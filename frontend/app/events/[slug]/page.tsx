@@ -129,7 +129,7 @@ export default async function EventPage({
           return (
             <Link
               key={related_event._id}
-              href={`/news/${related_event.slug.current}`}
+              href={`/events/${related_event.slug.current}`}
             >
               <div className="flex justify-center items-center gap-4">
                 {imageUrl && (

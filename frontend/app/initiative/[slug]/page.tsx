@@ -38,7 +38,6 @@ function formatDate(dateString?: string) {
   return `${day}${suffix} ${month} ${year}`;
 }
 
-
 export default async function PostPage({
   params,
 }: {
@@ -54,9 +53,6 @@ export default async function PostPage({
     return (
       <main className="container mx-auto min-h-screen max-w-3xl p-8">
         <h1 className="text-2xl font-bold">Post not found</h1>
-        <Link href="/" className="hover:underline">
-          ← Back to posts
-        </Link>
       </main>
     );
   }
@@ -67,19 +63,19 @@ export default async function PostPage({
 
   return (
     <main className="container mx-auto min-h-screen max-w-3xl p-8 flex flex-col gap-4">
-      <Link href="/" className="hover:underline">
-        ← Back to posts
-      </Link>
-
       <div className="mb-4">
-        <h1 className="text-2xl font-medium mb-4 uppercase leading-7">{initiative.title}</h1>
+        <h1 className="text-2xl font-medium mb-4 uppercase leading-7">
+          {initiative.title}
+        </h1>
         <div className="h-2 w-25 bg-secondary" />
       </div>
 
       {initiative.publishedAt && (
         <div className="flex items-center gap-2 ">
           <FaCalendarAlt className="text-white p-1 bg-secondary text-2xl" />
-          <p className="text-gray-500 text-sm">Event Date on {formatDate(initiative.publishedAt)}</p>
+          <p className="text-gray-500 text-sm">
+            Event Date on {formatDate(initiative.publishedAt)}
+          </p>
         </div>
       )}
       {postImageUrl && (
@@ -88,15 +84,15 @@ export default async function PostPage({
           height={300}
           src={postImageUrl}
           alt={initiative.title}
-          className="w-full object-cover h-[400px] object-top"
+          className="w-full object-fit h-[400px] object-top"
         />
       )}
 
-
       <div className="prose space-y-4 text-sm">
-        {Array.isArray(initiative.body) && <PortableText value={initiative.body} />}
+        {Array.isArray(initiative.body) && (
+          <PortableText value={initiative.body} />
+        )}
       </div>
     </main>
   );
 }
-

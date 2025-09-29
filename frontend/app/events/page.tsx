@@ -3,6 +3,7 @@ import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import HorizontalLine from "../components/horizontal-line";
 
 const { projectId, dataset } = client.config();
 const urlFor = (source: SanityImageSource) =>
@@ -56,7 +57,6 @@ export default async function EventsPage({
                 }}
               ></div>
               <div className="bg-secondary text-white p-5 space-y-3 md:w-1/2">
-                <h3 className="text-2xl uppercase">Events</h3>
                 <h2 className="font-bold text-3xl line-clamp-2">
                   {event.title}
                 </h2>

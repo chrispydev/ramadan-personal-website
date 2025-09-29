@@ -1,6 +1,6 @@
-import { FC } from "react"
+import { FC } from "react";
 import Image from "next/image";
-import { IoTimeOutline } from "react-icons/io5"
+import { IoTimeOutline } from "react-icons/io5";
 import { client } from "@/sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -34,7 +34,6 @@ function formatDate(dateString?: string) {
   return `${day}${suffix} ${month} ${year}`;
 }
 
-
 const { projectId, dataset } = client.config();
 
 const urlFor = (source: SanityImageSource) =>
@@ -42,7 +41,12 @@ const urlFor = (source: SanityImageSource) =>
     ? imageUrlBuilder({ projectId, dataset }).image(source)
     : null;
 
-const Initiate: FC<InitiateProps> = ({ imageRef, date, title, description }) => {
+const Initiate: FC<InitiateProps> = ({
+  imageRef,
+  date,
+  title,
+  description,
+}) => {
   const imageUrl = imageRef ? urlFor(imageRef)?.url() : null;
 
   return (
@@ -53,22 +57,25 @@ const Initiate: FC<InitiateProps> = ({ imageRef, date, title, description }) => 
           alt={title ?? "initiative"}
           width={300}
           height={200}
-          className="w-[280px] h-[150px] object-top object-cover transition duration-500 hover:brightness-110"
+          className="w-[280px] h-[150px] object-top object-fit transition duration-500 hover:brightness-110"
         />
       )}
       <div className="flex justify-start items-center space-x-2">
         <IoTimeOutline />
-        <p className="text-sm">
-          Date:{formatDate(date)}
-        </p>
+        <p className="text-sm">Date:{formatDate(date)}</p>
       </div>
-      <h5 className="font-black">{title ?? "Untitled Initiative"}</h5>
-      <p className="text-sm font-extralight leading-6">{description}</p>
-      <button className="bg-black hover:bg-secondary text-white py-2 px-5 cursor-pointer">Read more</button>
+      <h5 className="font-black line-clamp-2">
+        {title ?? "Untitled Initiative"}
+      </h5>
+      <p className="text-sm font-extralight leading-6 line-clamp-3">
+        {description}
+      </p>
+      <button className="bg-black hover:bg-secondary text-white py-2 px-5 cursor-pointer">
+        Read more
+      </button>
       <hr className="decoration-1 text-secondary" />
     </section>
-  )
-}
+  );
+};
 
-export default Initiate
-
+export default Initiate;
