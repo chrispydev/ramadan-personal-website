@@ -7,37 +7,44 @@ export default function OurTeams() {
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl font-black mb-2">My Team </h1>
         <div className="h-2 w-20 bg-secondary" />
-        <article className="flex flex-col justify-center items-center mx-8 gap-8">
+        <article className="flex flex-col justify-center items-center flex-wrap md:mx-8 mx-2 gap-8">
           <Team
             name="Mohammed Adamu Ramadan"
             imgSrc="/team.jpg"
             role="Member of Parliament"
             show
           />
-          <div className="flex justify-center items-center gap-4">
-            <Team
-              name="Edem Rudolf Agbenorku"
-              imgSrc="/team3.jpeg"
-              role="Research Assistant"
-            />
-            <Team
-              name="Osman Issaka"
-              imgSrc="/team1.jpeg"
-              role="Special Assistant"
-            />
-            <Team
-              name="Promise Kwesi Oniwor"
-              imgSrc="/team2.jpeg"
-              role="Administrative Assistant"
-            />
-            <Team name="Jane Asiwome" imgSrc="/team4.jpeg" role="Secetery" />
+          <div>
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-4xl font-black"> Staff </h1>
+              <div className="h-2 w-20 bg-secondary" />
+            </div>
+            <div className="flex flex-wrap justify-center items-center gap-4">
+              <Team
+                name="Edem Rudolf Agbenorku"
+                imgSrc="/team3.jpeg"
+                role="Research Assistant"
+              />
+              <Team
+                name="Osman Issaka"
+                imgSrc="/team1.jpeg"
+                role="Special Assistant"
+              />
+              <Team
+                name="Promise Kwesi Oniwor"
+                imgSrc="/team2.jpeg"
+                role="Administrative Assistant"
+              />
+              <Team name="Jane Asiwome" imgSrc="/team4.jpeg" role="Secetery" />
+            </div>
           </div>
 
           <div>
             {/* Volunteerism*/}
-            <h1 className="text-2xl font-bold uppercase text-center underline mt-8">
-              Volunteers
-            </h1>
+            <div className="flex justify-center items-center flex-col">
+              <h1 className="text-4xl font-black"> Volunteers </h1>
+              <div className="h-2 w-20 bg-secondary" />
+            </div>
             <div className="flex flex-wrap justify-center items-center gap-8 ">
               <Image
                 src={"/v1.jpg"}
