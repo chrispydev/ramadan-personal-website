@@ -48,28 +48,24 @@ const sections = [
 ];
 
 export default function ServicesDrawer({
-  isOpen,
-  setIsOpen,
+  open,
+  setOpen,
 }: {
-  isOpen: boolean;
-  setIsOpen: (v: boolean) => void;
+  open: boolean;
+  setOpen: (v: boolean) => void;
 }) {
   // 🚫 Disable background scroll when drawer is open
   useEffect(() => {
-    if (isOpen) {
+    if (open) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
-  }, [isOpen]);
+  }, [open]);
 
   return (
-    <Transition show={isOpen} as={Fragment}>
-      <Dialog
-        as="div"
-        className="relative z-50"
-        onClose={() => setIsOpen(false)}
-      >
+    <Transition show={open} as={Fragment}>
+      <Dialog as="div" className="relative z-50" onClose={() => setOpen(false)}>
         {/* Overlay */}
         <Transition.Child
           as={Fragment}
@@ -99,7 +95,7 @@ export default function ServicesDrawer({
                 {/* Close Button */}
                 <button
                   className="self-end text-gray-600 hover:text-black"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setOpen(false)}
                 >
                   <FaTimes className="w-6 h-6" />
                 </button>

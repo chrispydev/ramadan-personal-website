@@ -2,12 +2,11 @@
 import React, { useState, FC } from "react";
 import Logo from "./logo";
 import NavLink from "./nav-link";
-// import ServicesModal from "./services-modal";
 import ServicesDrawer from "./services-modal";
 
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [isClose, setIsClose] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <header className="flex lg:justify-center justify-between items-center space-x-4 shadow-md p-4  sticky top-0 left-0 right-0 bg-white z-50">
@@ -25,8 +24,8 @@ const Navbar: FC = () => {
             linkName="Services & Opportunities"
           /> */}
           <button
-            onClick={() => setIsClose(true)}
-            className="hover:text-secondary"
+            onClick={() => setServicesOpen(true)}
+            className="hover:text-secondary uppercase tracking-tighter"
           >
             Services & Opportunities
           </button>
@@ -76,8 +75,8 @@ const Navbar: FC = () => {
                 linkName="Services & Opportunities"
               /> */}
               <button
-                onClick={() => setIsClose(true)}
-                className="hover:text-secondary"
+                onClick={() => setServicesOpen(true)}
+                className="hover:text-secondary uppercase tracking-tighter"
               >
                 Services & Opportunities
               </button>
@@ -95,7 +94,7 @@ const Navbar: FC = () => {
           </ul>
         </>
       )}
-      <ServicesDrawer isOpen={isClose} setIsOpen={setIsClose} />
+      <ServicesDrawer open={servicesOpen} setOpen={setServicesOpen} />
     </header>
   );
 };
