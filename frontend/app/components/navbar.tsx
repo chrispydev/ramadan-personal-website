@@ -23,6 +23,9 @@ const Navbar: FC = () => {
           />
         </li>
         <li>
+          <NavLink href="/gallery" linkName="Gallery" />
+        </li>
+        <li>
           <NavLink href="/events" linkName="Events" />
         </li>
         <li>
@@ -63,6 +66,9 @@ const Navbar: FC = () => {
                 href="/Services-Opportunities"
                 linkName="Services & Opportunities"
               />
+            </li>
+            <li>
+              <NavLink href="/gallery" linkName="Gallery" />
             </li>
             <li>
               <NavLink href="/events" linkName="Events" />
