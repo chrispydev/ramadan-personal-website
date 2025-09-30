@@ -65,9 +65,9 @@ export default async function EventPage({
     return (
       <main className="container mx-auto min-h-screen max-w-3xl p-8">
         <h1 className="text-2xl font-bold">Post not found</h1>
-        <Link href="/" className="hover:underline">
+        {/* <Link href="/" className="hover:underline">
           ← Back to posts
-        </Link>
+        </Link> */}
       </main>
     );
   }
@@ -77,9 +77,9 @@ export default async function EventPage({
   return (
     <main className="grid md:grid-cols-3 grid-cols-1 gap-4 md:p-8 p-4">
       <article className="container mx-auto min-h-screen max-w-3xl flex flex-col gap-4 col-span-2">
-        <Link href="/" className="hover:underline">
+        {/* <Link href="/" className="hover:underline">
           ← Back to posts
-        </Link>
+        </Link> */}
 
         <div className="mb-4">
           <h1 className="text-2xl font-medium mb-4 uppercase leading-7">
