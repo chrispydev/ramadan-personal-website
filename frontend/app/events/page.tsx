@@ -52,7 +52,7 @@ export default async function EventsPage({
                 className="w-full md:w-1/2 p-5 md:h-[350px] lg:h-[275px] h-[300px]"
                 style={{
                   backgroundImage: `url(${urlFor(event.image)?.url()})`,
-                  backgroundSize: "cover",
+                  backgroundSize: "contain",
                   backgroundPosition: "center",
                 }}
               ></div>

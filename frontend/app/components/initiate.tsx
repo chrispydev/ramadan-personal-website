@@ -57,7 +57,7 @@ const Initiate: FC<InitiateProps> = ({
           alt={title ?? "initiative"}
           width={300}
           height={200}
-          className="w-[280px] h-[150px] object-top object-fit transition duration-500 hover:brightness-110"
+          className="w-[280px] h-[200px] object-top object-fit transition duration-500 hover:brightness-110"
         />
       )}
       <div className="flex justify-start items-center space-x-2">
